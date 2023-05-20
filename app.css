@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    
+  /* Primary */
+
+--Orange: hsl(25, 97%, 53%);
+
+  /*  Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--font-family: 'Overpass', sans-serif;
+}
+body{
+    background-color:var(--Very-Dark-Blue);
+    font-family:var(--font-family);
+
+}
+.container
+{
+   margin:10rem auto; 
+   display:block;
+    background-color:var(--Dark-Blue);
+   min-height:20rem;
+    max-width:320px;
+    padding:1.9rem;
+    border-radius:1.5rem;
+   
+    
+  
+}
+.row-1{
+    margin-bottom:1.9rem;
+    background-color: var(--Medium-Grey);
+    border-radius:50%;
+    width:3rem;
+    height:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+   
+}
+.active{
+    color:red;
+}
+ h2{
+    color:var(--White);
+}
+ p
+{
+    padding:1.2rem 0rem;
+    color:var(--Medium-Grey);
+}
+.middle{
+    
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom: 2rem;
+}
+.middle nav{
+    background-color:var(--Very-Dark-Blue);
+    border-radius:50%;
+    width:3rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:3rem;
+    color:var(--Medium-Grey);
+    transition:0.4s ease-in-ease-out;
+}
+.middle nav:hover{
+ cursor:pointer;
+ background:var(--Orange);
+ color:var(--White);
+}
+.ctn{
+    border-radius:5rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    width:100%;
+    padding: 0.5rem 3rem;
+    height:2.5rem;
+    border:none;
+    color:var(--White);
+    background:var(--Orange);
+    font-family:var(--font-family);
+    font-size:15px;
+    transition:0.4s ease-in-ease-out;
+}
+.ctn:hover{
+    cursor:pointer;
+   background-color:var(--White);
+   color:var(--Orange);
+
+}
+
+.sec-container{
+    margin:10rem auto; 
+    background-color:var(--Dark-Blue);
+   min-height:20rem;
+   text-align: center;
+    max-width:320px;
+    padding:1.9rem;
+    border-radius:1.5rem;
+    display:none;
+    
+}
+.sec-container h5{
+    margin:1.5rem auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--Very-Dark-Blue);
+    color:var(--Orange);
+    font-size:15px;
+    width:180px;
+    border-radius:5rem;
+    height:32px;
+    opacity:.9;
+}
+
+.row-2{
+    margin:1rem auto;
+    display:flex;
+    justify-content: center;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
